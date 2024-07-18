@@ -62,10 +62,25 @@ console.log("***********************************");
 
 //Do While Loop
 {
-let i = 1;
+  let i = 1;
 
-do {
-  console.log(i);
-  i++;
-} while (i <= 5);
+  do {
+    console.log(i);
+    i++;
+  } while (i <= 5);
 }
+
+//Block 
+if (true) {
+  let string = "Hello boss ";
+  console.log(string);
+}
+// console.log(string);
+
+//Function
+function testFuntion() {
+    var funVariable = "I am at test function";
+    console.log(funVariable);
+}
+testFuntion();
+//console.log(funVariable);
