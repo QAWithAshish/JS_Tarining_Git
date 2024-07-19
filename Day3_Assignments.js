@@ -21,4 +21,10 @@ function highOrderFunction(func, num) {
 
 const square = (a) => a * a;
 
-console.log(highOrderFunction(square,))
+console.log("Area of Square = ",highOrderFunction(square,4))
+
+// Create a function that prints "Hello, [name]!" where [name] is passed as a parameter.
+function print(name){
+    console.log(`Hello, ${name}!`);
+}
+print("Ashish");
