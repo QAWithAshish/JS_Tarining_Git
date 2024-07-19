@@ -1,7 +1,8 @@
-// Conditional statements: if, else, else if, switch 
-// Loops: for, while, do-while
-// Understanding block scope and function scope
-
+// Write a program that uses if-else statements to check if a number is positive, negative, or zero.
+// Create a script that uses a switch statement to print the day of the week based on a number 1 to 7.
+// Write a loop that prints numbers from 1 to 10 using a for loop.
+// Write a loop that prints numbers from 10 to 1 using a while loop.
+// Write a do-while loop that prints numbers from 1 to 5.
 
 // Write a program that uses if-else statements to check if a number is positive, negative, or zero.
 let number = -18;
@@ -53,7 +54,6 @@ switch (dayNumber) {
 for (let i = 1; i <= 10; i++) {
   console.log(i);
 }
-
 console.log("***********************************");
 
 //While Loop
@@ -75,17 +75,3 @@ console.log("***********************************");
   } while (i <= 5);
 }
 
-//Block 
-if (true) {
-  let string = "Hello boss ";
-  console.log(string);
-}
-// console.log(string);
-
-//Function
-function testFuntion() {
-    var funVariable = "I am at test function";
-    console.log(funVariable);
-}
-testFuntion();
-//console.log(funVariable);
