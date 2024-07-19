@@ -1,3 +1,8 @@
+var number =100;
+
+let userName ="Ashish";
+
+const lastName ="Bhalray";
 
 //Hello, World print 
 let grettings = "Hello, World!"
