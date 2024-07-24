@@ -3,6 +3,7 @@
 // Looping through arrays and objects
 
 const { element } = require("wd/lib/commands");
+const prompt  = require('prompt-sync')();
 
 // Arrays: declaration, indexing, methods (push, pop, shift, unshift, slice, splice, map, filter, reduce)
 
@@ -53,14 +54,14 @@ console.log("After removing last city ", city); // After removing last city  [ '
 let fristCity = city.shift();
 console.log("After removing first element ", city); //[ 'Indore', 'Dewas', 'Khandwa', 'Ratlam' ]
 
-//Splice --> It will take two things one index and number of element to remove  Removes||
+//Splice --> It will take two things one index and number of element to remove ||
 // 2 elements starting from index 1 and we can add elements as well
-city.splice(1, 2, "Hello", "Hi");
+city.splice(1, 3, "Hello", "Hi");
 console.log("After Removing 2 elements starting from index 1 : ", city);
 
 //Slice --> method slices out a piece of an array
 const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-const removeFruits = fruits.slice(1, 3); //Frist index value will be inclusive and last will be exclusive
+const removeFruits = fruits.slice(2, 3); //Frist index value will be inclusive and last will be exclusive
 console.log(removeFruits);
 
 //Map --> creates a new array from calling a function for every array element.
@@ -175,3 +176,7 @@ carNames.forEach((element)=> {
     console.log(element);
 })
   
+
+//Take user input
+const age = prompt("Please enter your number ");
+console.log(`Entered number : ${age}`);
