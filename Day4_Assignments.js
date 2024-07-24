@@ -27,9 +27,8 @@ console.log(fruits);
 const person = {
   name: "Ashish",
   age: 27,
-  hobbies: ["Horse Riding","Travelinng"],
+  hobbies: ["Horse Riding", "Travelinng"],
   bloodType: "O+",
-  
 };
 
 function getName(person) {
@@ -39,13 +38,12 @@ function getName(person) {
 function setName(person, newName) {
   person.name = newName;
 }
-function addHobbies(person , newHobbie){
-person.hobbies.push(newHobbie);
+function addHobbies(person, newHobbie) {
+  person.hobbies.push(newHobbie);
 }
-function removeHobbies(person ){
-    person.hobbies.pop();
-    }
-
+function removeHobbies(person) {
+  person.hobbies.pop();
+}
 
 setName(person, "Bhai Bhai");
 console.log(getName(person));
@@ -53,32 +51,32 @@ console.log(getName(person));
 addHobbies(person, "Bike Rinding");
 console.log(person);
 
-removeHobbies(person)
+removeHobbies(person);
 console.log(person);
 
-setName(person ,"Ashish");
+setName(person, "Ashish");
 console.log(person);
 
 // Write a loop to iterate through an array and print each element.
 const courses = ["Java", "Python", "C#", "JS"];
-courses.forEach((element)=> {
-    console.log(element);
-})
+courses.forEach((element) => {
+  console.log(element);
+});
 
 // Write a loop to iterate through an object and print each property and its value.
 const person1 = {
-    name: "Rajat",
-    age: 27,
-    hobbies: ["Horse Riding","Travelinng"],
-    bloodType: "O+"
-  };
+  name: "Rajat",
+  age: 27,
+  hobbies: ["Horse Riding", "Travelinng"],
+  bloodType: "O+",
+};
 
-  function printAllProperties(person) {
-    for (let key in person) {
-      if (person.hasOwnProperty(key)) {
-        console.log(`${key}: ${person[key]}`);
-      }
+function printAllProperties(person) {
+  for (let key in person) {
+    if (person.hasOwnProperty(key)) {
+      console.log(`${key}: ${person[key]}`);
     }
   }
+}
 
-  printAllProperties(person);
+printAllProperties(person);
