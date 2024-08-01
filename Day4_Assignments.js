@@ -7,6 +7,18 @@
 // Create an array of numbers and write a function that returns the sum of all elements.
 let array = [1, 2, 3, 4, 5];
 
+function sumOfArray(arr){
+  let sum =0;
+  for(let i in array){
+  
+  sum = sum + array[i];
+  }
+return sum;
+}
+  let sumIs = sumOfArray(array);
+  console.log(sumIs);
+
+// With array methods reduce() 
 let sumOfAllElements = array.reduce((h1, h2) => {
   return h1 + h2;
 });
